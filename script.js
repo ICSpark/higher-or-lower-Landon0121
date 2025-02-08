@@ -16,13 +16,32 @@ function generateRandom() {
 
 // Function for the higher button
 function higher() {
-   
-}
+   if (random < nextRandom) {
+    window.alert("Correct!");
+    }
+    else if (random > nextRandom) {
+        window.alert("Wrong!");
+    }
+    else{
+        window.alert("The Numbers are the Same!")
+    }
+    generateRandom()
+   }
 
 // Function for the lower button
 function lower() {
-   
+    if (random > nextRandom) {
+        window.alert("Correct!")
+    }
+    else if (random < nextRandom) {
+        window.alert("Wrong!")
+    }
+    else{
+        window.alert("The Numbers are the Same")
+    }
+    generateRandom()
 }
+    
 
 //Generate a number to start the game!
 generateRandom();
